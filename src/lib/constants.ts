@@ -1,21 +1,23 @@
+import { get } from 'svelte-i18n';
+
 export const TITLE_CONSTANTS = {
-	PATH: 'https://www.baca-quran.id/',
-	TITLE: "Baca Qur'an",
-	TITLE_META: 'Baca-Quran.id',
-	LAST_READ: 'Terakhir Dibaca',
-	FAVORITE: 'Surat Favorit',
-	RECOMMENDATION: 'Surat Rekomendasi',
-	ERROR: 'Error',
-	SEARCH_PAGE: 'Pencarian surat',
-	AYAT_KURSI: 'Ayat Kursi',
-	ASMAUL_HUSNA: 'Asmaul Husna',
-	DAILY_DOA: "Do'a Harian",
-	TAHLIL: "Do'a Tahlil",
-	WIRID: 'Wirid',
-	JUZ_AMMA: 'Juz Amma',
-	TASBIH: 'Tasbih',
-	SURAT_LIST: 'Daftar Surat',
-	ABOUT: 'Tentang'
+	PATH: 'https://www.les-koranen.no/',
+	TITLE: get('app.title'),
+	TITLE_META: get('app.title_meta'),
+	LAST_READ: get('app.last_read'),
+	FAVORITE: get('app.favorite'),
+	RECOMMENDATION: get('app.recommendation'),
+	ERROR: get('app.error'),
+	SEARCH_PAGE: get('app.search_page'),
+	AYAT_KURSI: get('app.ayat_kursi'),
+	ASMAUL_HUSNA: get('app.asmaul_husna'),
+	DAILY_DOA: get('app.daily_doa'),
+	TAHLIL: get('app.tahlil'),
+	WIRID: get('app.wirid'),
+	JUZ_AMMA: get('app.juz_amma'),
+	TASBIH: get('app.tasbih'),
+	SURAT_LIST: get('app.surat_list'),
+	ABOUT: get('app.about')
 };
 
 export const CONSTANTS = {
@@ -35,58 +37,48 @@ export const CONSTANTS = {
 	BISMILLAH: '﷽'
 };
 
-const postfix = (withTafsir: boolean) =>
-	`beserta terjemahan${
-		withTafsir ? ' dan tafsir dari Kemenag' : ''
-	}, 💸 gratis sepenuhnya, 💫 tanpa iklan, 📈 tanpa analitik`;
-export const META_TITLE = `Qur'an Online Gratis | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC = `Bacaan lengkap Al-Qur'an 30 Juz ${postfix(true)}`;
+export const META_TITLE = get('meta.title', { title_meta: get('app.title_meta') });
+export const META_DESC = get('meta.description');
 
-export const META_TITLE_ALL_SURAH = `Semua Surat Al-Qur'an | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_ALL_SURAH = `Daftar semua surat dalam Al-Qur'an ${postfix(false)}`;
+export const META_TITLE_ALL_SURAH = get('meta.all_surah_title', { title_meta: get('app.title_meta') });
+export const META_DESC_ALL_SURAH = get('meta.all_surah_description');
 
-export const META_TITLE_MAKKIYAH = `Surat Makkiyah Al-Qur'an | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_MAKKIYAH = `Daftar semua surat-surat Makkiyah dalam Al-Qur'an ${postfix(
-	false
-)}`;
+export const META_TITLE_MAKKIYAH = get('meta.makkiyah_title', { title_meta: get('app.title_meta') });
+export const META_DESC_MAKKIYAH = get('meta.makkiyah_description');
 
-export const META_TITLE_MADANIYAH = `Surat Madaniyah Al-Qur'an | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_MADANIYAH = `Daftar semua surat-surat Madaniyah dalam Al-Qur'an ${postfix(
-	false
-)}`;
+export const META_TITLE_MADANIYAH = get('meta.madaniyah_title', { title_meta: get('app.title_meta') });
+export const META_DESC_MADANIYAH = get('meta.madaniyah_description');
 
-export const META_TITLE_JUZ_AMMA = `Juz Amma (Juz 30) Al-Qur'an | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_JUZ_AMMA = `Daftar semua surat Juz Amma (Juz 30) dalam Al-Qur'an ${postfix(
-	false
-)}`;
+export const META_TITLE_JUZ_AMMA = get('meta.juz_amma_title', { title_meta: get('app.title_meta') });
+export const META_DESC_JUZ_AMMA = get('meta.juz_amma_description');
 
-export const META_TITLE_ASMAUL_HUSNA = `Asmaul husna beserta terjemahan | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_ASMAUL_HUSNA = `Daftar lengkap asmaul husna ${postfix(false)}`;
+export const META_TITLE_ASMAUL_HUSNA = get('meta.asmaul_husna_title', { title_meta: get('app.title_meta') });
+export const META_DESC_ASMAUL_HUSNA = get('meta.asmaul_husna_description');
 
-export const META_TITLE_AYAT_KURSI = `Bacaan ayat kursi beserta terjemahan | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_AYAT_KURSI = `Bacaan ayat kursi ${postfix(false)}`;
+export const META_TITLE_AYAT_KURSI = get('meta.ayat_kursi_title', { title_meta: get('app.title_meta') });
+export const META_DESC_AYAT_KURSI = get('meta.ayat_kursi_description');
 
-export const META_TITLE_DAILY_DOA = `Daftar lengkap do'a harian beserta terjemahan | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_DAILY_DOA = `Daftar lengkap do'a harian ${postfix(false)}`;
+export const META_TITLE_DAILY_DOA = get('meta.daily_doa_title', { title_meta: get('app.title_meta') });
+export const META_DESC_DAILY_DOA = get('meta.daily_doa_description');
 
-export const META_TITLE_TAHLIL = `Bacaan lengkap tahlil beserta terjemahan | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_TAHLIL = `Bacaan lengkap tahlil ${postfix(false)}`;
+export const META_TITLE_TAHLIL = get('meta.tahlil_title', { title_meta: get('app.title_meta') });
+export const META_DESC_TAHLIL = get('meta.tahlil_description');
 
-export const META_TITLE_WIRID = `Bacaan lengkap wirid setelah sholat | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_WIRID = `Bacaan lengkap wirid setelah sholat ${postfix(false)}`;
+export const META_TITLE_WIRID = get('meta.wirid_title', { title_meta: get('app.title_meta') });
+export const META_DESC_WIRID = get('meta.wirid_description');
 
-export const META_TITLE_TASBIH = `Tasbih Digital Online dari ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_TASBIH = `Tasbih digital online untuk mempermudah menghitung Dzikirmu. Gratis sepenuhnya, tanpa iklan, tanpa unduh, tanpa analitik, privasi aman`;
+export const META_TITLE_TASBIH = get('meta.tasbih_title', { title_meta: get('app.title_meta') });
+export const META_DESC_TASBIH = get('meta.tasbih_description');
 
-export const META_TITLE_JADWAL_SHOLAT = `Jadwal sholat | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_JADWAL_SHOLAT = `Jadwal sholat sesuai lokasi 💯 gratis, ❌ tanpa iklan, ❌ tanpa analitik`;
+export const META_TITLE_JADWAL_SHOLAT = get('meta.jadwal_sholat_title', { title_meta: get('app.title_meta') });
+export const META_DESC_JADWAL_SHOLAT = get('meta.jadwal_sholat_description');
 
-export const META_TITLE_PENCATAT_IBADAH = `Pencatat Ibadah Digital Online dari ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_PENCATAT_IBADAH = `Mulai catat ibadahmu untuk refleksi diri melalui ${TITLE_CONSTANTS.TITLE_META}. Gratis sepenuhnya, tanpa iklan, tanpa unduh, tanpa analitik, privasi aman.`;
+export const META_TITLE_PENCATAT_IBADAH = get('meta.pencatat_ibadah_title', { title_meta: get('app.title_meta') });
+export const META_DESC_PENCATAT_IBADAH = get('meta.pencatat_ibadah_description');
 
 export const META_TITLE_SURAH = (name: string) =>
-	`Qur'an Surat ${name} | ${TITLE_CONSTANTS.TITLE_META}`;
-export const META_DESC_SURAH = (name: string) => `Qur'an Surat ${name} ${postfix(true)}`;
+	get('meta.surah_title', { name, title_meta: get('app.title_meta') });
+export const META_DESC_SURAH = (name: string) => get('meta.surah_description', { name });
 
 export const META_TITLE_AYAH = (
 	verseid: string,
@@ -94,7 +86,13 @@ export const META_TITLE_AYAH = (
 	name?: string,
 	translation?: string
 ) =>
-	`QS ${surahid}:${verseid}, Surat ${name} - ${translation}, Ayat ${verseid || 1} | ${TITLE_CONSTANTS.TITLE_META}`;
+	get('meta.ayah_title', {
+		surahid,
+		verseid,
+		name,
+		translation,
+		title_meta: get('app.title_meta')
+	});
 
 export const META_DESC_AYAH = (
 	verseid: string,
@@ -102,7 +100,12 @@ export const META_DESC_AYAH = (
 	name?: string,
 	translation?: string
 ) =>
-	`Ayat ${verseid || 1} dari Surat ${name} - ${translation} - (QS ${surahid}:${verseid}) ${postfix(true)}`;
+	get('meta.ayah_description', {
+		surahid,
+		verseid,
+		name,
+		translation
+	});
 
 export type SeoArgs = {
 	surahLatin: string;
@@ -126,41 +129,27 @@ export type PageVariant =
 	| 'CATAT_IBADAH';
 
 export const SEO_TEXT = {
-	ALL_SURAH:
-		'Baca Quran lengkap 30 Juz 114 Surat beserta terjemahan bahasa Indonesia dan tafsir dari Kemenag. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	MAKKIYAH:
-		'Baca Quran Surat-Surat Makkiyah beserta terjemahan bahasa Indonesia dan tafsir dari Kemenag. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	MADANIYAH:
-		'Baca Quran Surat-Surat Madaniyah beserta terjemahan bahasa Indonesia dan tafsir dari Kemenag. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	ASMAUL_HUSNA:
-		'Daftar Asmaul Husna, lengkap dengan tulisan arab dan artinya. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	AYAT_KURSI:
-		'Bacaan Ayat Kursi dengan terjemahan bahasa Indonesia. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	DAILY_DOA:
-		"Kumpulan bacaan Do'a sehari-hari untuk anak dan dewasa beserta tulisan latin dan terjemahan bahasa Indonesia. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.",
-	JUZ_AMMA:
-		"Baca Juz Amma (Qur'an Juz 30) beserta terjemahan bahasa Indonesia dan tafsir dari Kemenag. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.",
-	TAHLIL:
-		'Bacaan Tahlil lengkap beserta urutan dan tata caranya. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	WIRID:
-		'Bacaan, urutan dan tata cara Wirid setelah sholat. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	TASBIH:
-		'Tasbih digital online dari Baca-Quran.id, mempermudah menghitung Dzikirmu. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	JADWAL_SHOLAT:
-		'Jadwal sholat terlengkap. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
-	CATAT_IBADAH:
-		'Catat ibadahmu untuk refleksi diri. Pencatat ibadah online dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.',
+	ALL_SURAH: get('seo.all_surah'),
+	MAKKIYAH: get('seo.makkiyah'),
+	MADANIYAH: get('seo.madaniyah'),
+	ASMAUL_HUSNA: get('seo.asmaul_husna'),
+	AYAT_KURSI: get('seo.ayat_kursi'),
+	DAILY_DOA: get('seo.daily_doa'),
+	JUZ_AMMA: get('seo.juz_amma'),
+	TAHLIL: get('seo.tahlil'),
+	WIRID: get('seo.wirid'),
+	TASBIH: get('seo.tasbih'),
+	JADWAL_SHOLAT: get('seo.jadwal_sholat'),
+	CATAT_IBADAH: get('seo.catat_ibadah'),
 	SURAH_DETAIL: '',
 	AYAT_DETAIL: ''
 };
 
 export const SEO_TEXT_DYNAMIC = {
 	SURAH_DETAIL: ({ surahLatin }: SeoArgs) =>
-		`Baca Quran Surat ${surahLatin} beserta terjemahan bahasa Indonesia dan tafsir dari Kemenag. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.`,
+		get('seo.surah_detail', { surahLatin }),
 	AYAT_DETAIL: ({ surahLatin, verseNumber }: SeoArgs) =>
-		`Baca Quran Surat ${surahLatin} Ayat ${String(
-			verseNumber
-		)} beserta terjemahan bahasa Indonesia dan tafsir dari Kemenag. Langsung dari peramban, tanpa iklan, tanpa analitik, privasi aman dan gratis sepenuhnya.`
+		get('seo.ayat_detail', { surahLatin, verseNumber })
 };
 
 export const THEMES = [

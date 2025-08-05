@@ -20,6 +20,7 @@
 		"dayjs": "^1.11.13",
 		"firebase": "^11.1.0",
 		"svelte": "^5.16.6",
+		"svelte-i18n": "^4.0.1",
 		"tw-colors": "^3.3.2"
 	},
 	"devDependencies": {
