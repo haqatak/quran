@@ -1,54 +1,55 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	import CardShadow from '$lib/CardShadow.svelte';
 	import LastReadVerses from '$lib/LastReadVerses.svelte';
 	import MetaTag from '$lib/MetaTag.svelte';
 	import PinnedSurah from '$lib/PinnedSurah.svelte';
 	import { META_DESC, META_TITLE, TITLE_CONSTANTS } from '$lib/constants';
 
-	let actionIcons = [
+	const actionIcons = [
 		{
 			href: '/all-surah/',
-			title: '📚 Semua Surat'
+			title: $_('page.home.all_surah')
 		},
 		{
 			href: '/surah/1/1/',
-			title: '📖 Per Ayat'
+			title: $_('page.home.by_verse')
 		},
 		{
 			href: '/juz-amma/',
-			title: '📒 Juz Amma'
+			title: $_('page.home.juz_amma')
 		},
 		{
 			href: '/asmaul-husna/',
-			title: '💯 Asmaul Husna'
+			title: $_('page.home.asmaul_husna')
 		},
 		{
 			href: '/daily-doa/',
-			title: '🙏 Doa Harian'
+			title: $_('page.home.daily_doa')
 		},
 		{
 			href: '/wirid/',
-			title: '🧎 Wirid'
+			title: $_('page.home.wirid')
 		},
 		{
 			href: '/tasbih/',
-			title: '📿 Tasbih'
+			title: $_('page.home.tasbih')
 		},
 		{
 			href: '/tahlil/',
-			title: '🤲 Tahlil'
+			title: $_('page.home.tahlil')
 		},
 		{
 			href: '/ayat-kursi/',
-			title: '🪑 Ayat Kursi'
+			title: $_('page.home.ayat_kursi')
 		},
 		{
 			href: '/jadwal-sholat/',
-			title: '⏰ Jadwal Sholat'
+			title: $_('page.home.jadwal_sholat')
 		},
 		{
 			href: '/pencatat-ibadah/',
-			title: '⏺️ Pencatat Ibadah'
+			title: $_('page.home.pencatat_ibadah')
 		}
 	];
 </script>
@@ -62,7 +63,7 @@
 	<LastReadVerses />
 
 	<div class="flex gap-2 mt-2 mb-2">
-		<h2 class="text-xl font-bold">🌟 Fitur Baca-Quran.id</h2>
+		<h2 class="text-xl font-bold">{$_('page.home.features')}</h2>
 	</div>
 
 	<div class="grid grid-cols-2 gap-2">

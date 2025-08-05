@@ -1,6 +1,5 @@
 export type AsmaulHusnaItem = {
-	translation_id: string;
-	translation_en: string;
+	translation_no: string;
 	arabic: string;
 	latin: string;
 	index: string;
@@ -11,695 +10,596 @@ const asmaulHusna: AsmaulHusnaItem[] = [
 		arabic: 'الرَّحْمَنُ',
 		index: '1',
 		latin: 'Ar Rahman',
-		translation_en: 'The All Beneficent',
-		translation_id: 'Yang Maha Pengasih'
+		translation_no: 'Den Nåderike'
 	},
 	{
 		arabic: 'الرَّحِيمُ',
 		index: '2',
 		latin: 'Ar Rahiim',
-		translation_en: 'The Most Merciful',
-		translation_id: 'Yang Maha Penyayang'
+		translation_no: 'Den Barmhjertige'
 	},
 	{
 		arabic: 'الْمَلِكُ',
 		index: '3',
 		latin: 'Al Malik',
-		translation_en: 'The King, The Sovereign',
-		translation_id: 'Yang Maha Merajai/Memerintah'
+		translation_no: 'Kongen, Suverenen'
 	},
 	{
 		arabic: 'الْقُدُّوسُ',
 		index: '4',
 		latin: 'Al Quddus',
-		translation_en: 'The Most Holy',
-		translation_id: 'Yang Mahasuci'
+		translation_no: 'Den Hellige'
 	},
 	{
 		arabic: 'السَّلاَمُ',
 		index: '5',
 		latin: 'As Salaam',
-		translation_en: 'Peace and Blessing',
-		translation_id: 'Yang Maha Memberi Kesejahteraan'
+		translation_no: 'Fred og Velsignelse'
 	},
 	{
 		arabic: 'الْمُؤْمِنُ',
 		index: '6',
 		latin: 'Al Mu’min',
-		translation_en: 'The Guarantor',
-		translation_id: 'Yang Maha Memberi Keamanan'
+		translation_no: 'Garantisten'
 	},
 	{
 		arabic: 'الْمُهَيْمِنُ',
 		index: '7',
 		latin: 'Al Muhaimin',
-		translation_en: 'The Guardian, the Preserver',
-		translation_id: 'Yang Maha Pemelihara'
+		translation_no: 'Vokteren, Bevareren'
 	},
 	{
 		arabic: 'الْعَزِيزُ',
 		index: '8',
 		latin: 'Al ‘Aziiz',
-		translation_en: 'The Almighty, the Self Sufficient',
-		translation_id: 'Yang Memiliki Mutlak Kegagahan'
+		translation_no: 'Den Allmektige, den Selvtilstrekkelige'
 	},
 	{
 		arabic: 'الْجَبَّارُ',
 		index: '9',
 		latin: 'Al Jabbar',
-		translation_en: 'The Powerful, the Irresistible',
-		translation_id: 'Yang Maha Perkasa'
+		translation_no: 'Den Mektige, den Uimotståelige'
 	},
 	{
 		arabic: 'الْمُتَكَبِّرُ',
 		index: '10',
 		latin: 'Al Mutakabbir',
-		translation_en: 'The Tremendous',
-		translation_id: 'Yang Maha Megah'
+		translation_no: 'Den Enorme'
 	},
 	{
 		arabic: 'الْخَالِقُ',
 		index: '11',
 		latin: 'Al Khaliq',
-		translation_en: 'The Creator',
-		translation_id: 'Yang Maha Pencipta'
+		translation_no: 'Skaperen'
 	},
 	{
 		arabic: 'الْبَارِئُ',
 		index: '12',
 		latin: 'Al Baari’',
-		translation_en: 'The Maker',
-		translation_id: 'Yang Maha Melepaskan'
+		translation_no: 'Skaperen'
 	},
 	{
 		arabic: 'الْمُصَوِّرُ',
 		index: '13',
 		latin: 'Al Mushawwir',
-		translation_en: 'The Fashioner of Forms',
-		translation_id: 'Yang Maha Membentuk Rupa (makhluknya)'
+		translation_no: 'Formenes Skaper'
 	},
 	{
 		arabic: 'الْغَفَّارُ',
 		index: '14',
 		latin: 'Al Ghaffaar',
-		translation_en: 'The Ever Forgiving',
-		translation_id: 'Yang Maha Pengampun'
+		translation_no: 'Den Evig Tilgivende'
 	},
 	{
 		arabic: 'الْقَهَّارُ',
 		index: '15',
 		latin: 'Al Qahhaar',
-		translation_en: 'The All Compelling Subduer',
-		translation_id: 'Yang Maha Memaksa'
+		translation_no: 'Den Alt-Tvingende Undertrykkeren'
 	},
 	{
 		arabic: 'الْوَهَّابُ',
 		index: '16',
 		latin: 'Al Wahhaab',
-		translation_en: 'The Bestower',
-		translation_id: 'Yang Maha Pemberi Karunia'
+		translation_no: 'Giveren'
 	},
 	{
 		arabic: 'الرَّزَّاقُ',
 		index: '17',
 		latin: 'Ar Razzaaq',
-		translation_en: 'The Ever Providing',
-		translation_id: 'Yang Maha Pemberi Rezeki'
+		translation_no: 'Den Evig Forsørgende'
 	},
 	{
 		arabic: 'الْفَتَّاحُ',
 		index: '18',
 		latin: 'Al Fattaah',
-		translation_en: 'The Opener, the Victory Giver',
-		translation_id: 'Yang Maha Pembuka Rahmat'
+		translation_no: 'Åpneren, Seiersgiveren'
 	},
 	{
 		arabic: 'اَلْعَلِيْمُ',
 		index: '19',
 		latin: 'Al ‘Aliim',
-		translation_en: 'The All Knowing, the Omniscient',
-		translation_id: 'Yang Maha Mengetahui (Memiliki Ilmu)'
+		translation_no: 'Den Allvitende, den Omnisciente'
 	},
 	{
 		arabic: 'الْقَابِضُ',
 		index: '20',
 		latin: 'Al Qaabidh',
-		translation_en: 'The Restrainer, the Straightener',
-		translation_id: 'Yang Maha Menyempitkan (makhluknya)'
+		translation_no: 'Tilbakeholderen, Retteren'
 	},
 	{
 		arabic: 'الْبَاسِطُ',
 		index: '21',
 		latin: 'Al Baasith',
-		translation_en: 'The Expander, the Munificent',
-		translation_id: 'Yang Maha Melapangkan (makhluknya)'
+		translation_no: 'Utvideren, den Gavmilde'
 	},
 	{
 		arabic: 'الْخَافِضُ',
 		index: '22',
 		latin: 'Al Khaafidh',
-		translation_en: 'The Abaser',
-		translation_id: 'Yang Maha Merendahkan (makhluknya)'
+		translation_no: 'Nedsetteren'
 	},
 	{
 		arabic: 'الرَّافِعُ',
 		index: '23',
 		latin: 'Ar Raafi’',
-		translation_en: 'The Exalter',
-		translation_id: 'Yang Maha Meninggikan (makhluknya)'
+		translation_no: 'Opphøyeren'
 	},
 	{
 		arabic: 'الْمُعِزُّ',
 		index: '24',
 		latin: 'Al Mu’izz',
-		translation_en: 'The Giver of Honor',
-		translation_id: 'Yang Maha Memuliakan (makhluknya)'
+		translation_no: 'Æresgiveren'
 	},
 	{
 		arabic: 'المُذِلُّ',
 		index: '25',
 		latin: 'Al Mudzil',
-		translation_en: 'The Giver of Dishonor',
-		translation_id: 'Yang Maha Menghinakan (makhluknya)'
+		translation_no: 'Vanæresgiveren'
 	},
 	{
 		arabic: 'السَّمِيعُ',
 		index: '26',
 		latin: 'Al Samii’',
-		translation_en: 'The All Hearing',
-		translation_id: 'Yang Maha Mendengar'
+		translation_no: 'Den Allhørende'
 	},
 	{
 		arabic: 'الْبَصِيرُ',
 		index: '27',
 		latin: 'Al Bashiir',
-		translation_en: 'The All Seeing',
-		translation_id: 'Yang Maha Melihat'
+		translation_no: 'Den Allseende'
 	},
 	{
 		arabic: 'الْحَكَمُ',
 		index: '28',
 		latin: 'Al Hakam',
-		translation_en: 'The Judge, the Arbitrator',
-		translation_id: 'Yang Maha Menetapkan'
+		translation_no: 'Dommeren, Voldgiftsdommeren'
 	},
 	{
 		arabic: 'الْعَدْلُ',
 		index: '29',
 		latin: 'Al ‘Adl',
-		translation_en: 'The Utterly Just',
-		translation_id: 'Yang Mahaadil'
+		translation_no: 'Den Fullstendig Rettferdige'
 	},
 	{
 		arabic: 'اللَّطِيفُ',
 		index: '30',
 		latin: 'Al Lathiif',
-		translation_en: 'The Subtly Kind',
-		translation_id: 'Yang Maha Lembut'
+		translation_no: 'Den Subtilt Vennlige'
 	},
 	{
 		arabic: 'الْخَبِيرُ',
 		index: '31',
 		latin: 'Al Khabiir',
-		translation_en: 'The All Aware',
-		translation_id: 'Yang Maha Mengetahui Rahasia'
+		translation_no: 'Den Allvitende'
 	},
 	{
 		arabic: 'الْحَلِيمُ',
 		index: '32',
 		latin: 'Al Haliim',
-		translation_en: 'The Forbearing, the Indulgent',
-		translation_id: 'Yang Maha Penyantun'
+		translation_no: 'Den Overbærende, den Ettergivende'
 	},
 	{
 		arabic: 'الْعَظِيمُ',
 		index: '33',
 		latin: 'Al ‘Azhiim',
-		translation_en: 'The Magnificent, the Infinite',
-		translation_id: 'Yang Maha Agung'
+		translation_no: 'Den Storslåtte, den Uendelige'
 	},
 	{
 		arabic: 'الْغَفُورُ',
 		index: '34',
 		latin: 'Al Ghafuur',
-		translation_en: 'The All Forgiving',
-		translation_id: 'Yang Maha Pengampun'
+		translation_no: 'Den All-Tilgivende'
 	},
 	{
 		arabic: 'الشَّكُورُ',
 		index: '35',
 		latin: 'As Syakuur',
-		translation_en: 'The Grateful',
-		translation_id: 'Yang Maha Pembalas Budi (Menghargai)'
+		translation_no: 'Den Takknemlige'
 	},
 	{
 		arabic: 'الْعَلِيُّ',
 		index: '36',
 		latin: 'Al ‘Aliy',
-		translation_en: 'The Sublimely Exalted',
-		translation_id: 'Yang Maha Tinggi'
+		translation_no: 'Den Sublimt Opphøyde'
 	},
 	{
 		arabic: 'الْكَبِيرُ',
 		index: '37',
 		latin: 'Al Kabiir',
-		translation_en: 'The Great',
-		translation_id: 'Yang Maha Besar'
+		translation_no: 'Den Store'
 	},
 	{
 		arabic: 'الْحَفِيظُ',
 		index: '38',
 		latin: 'Al Hafizh',
-		translation_en: 'The Preserver',
-		translation_id: 'Yang Maha Menjaga'
+		translation_no: 'Bevareren'
 	},
 	{
 		arabic: 'المُقيِت',
 		index: '39',
 		latin: 'Al Muqiit',
-		translation_en: 'The Nourisher',
-		translation_id: 'Yang Maha Pemberi Kecukupan'
+		translation_no: 'Ernæreren'
 	},
 	{
 		arabic: 'الْحسِيبُ',
 		index: '40',
 		latin: 'Al Hasiib',
-		translation_en: 'The Reckoner',
-		translation_id: 'Yang Maha Membuat Perhitungan'
+		translation_no: 'Regnskapsføreren'
 	},
 	{
 		arabic: 'الْجَلِيلُ',
 		index: '41',
 		latin: 'Al Jaliil',
-		translation_en: 'The Majestic',
-		translation_id: 'Yang Maha Mulia'
+		translation_no: 'Den Majestetiske'
 	},
 	{
 		arabic: 'الْكَرِيمُ',
 		index: '42',
 		latin: 'Al Kariim',
-		translation_en: 'The Bountiful, the Generous',
-		translation_id: 'Yang Maha Pemurah'
+		translation_no: 'Den Gavmilde, den Generøse'
 	},
 	{
 		arabic: 'الرَّقِيبُ',
 		index: '43',
 		latin: 'Ar Raqiib',
-		translation_en: 'The Watchful',
-		translation_id: 'Yang Maha Mengawasi'
+		translation_no: 'Den Vaktsomme'
 	},
 	{
 		arabic: 'الْمُجِيبُ',
 		index: '44',
 		latin: 'Al Mujiib',
-		translation_en: 'The Responsive, the Answerer',
-		translation_id: 'Yang Maha Mengabulkan'
+		translation_no: 'Den Lydhøre, Svareren'
 	},
 	{
 		arabic: 'الْوَاسِعُ',
 		index: '45',
 		latin: 'Al Waasi’',
-		translation_en: 'The Vast, the All Encompassing',
-		translation_id: 'Yang Maha Luas'
+		translation_no: 'Den Vidstrakte, den Altomfattende'
 	},
 	{
 		arabic: 'الْحَكِيمُ',
 		index: '46',
 		latin: 'Al Hakiim',
-		translation_en: 'The Wise',
-		translation_id: 'Yang Maha Maka Bijaksana'
+		translation_no: 'Den Vise'
 	},
 	{
 		arabic: 'الْوَدُودُ',
 		index: '47',
 		latin: 'Al Waduud',
-		translation_en: 'The Loving, the Kind One',
-		translation_id: 'Yang Maha Pencinta'
+		translation_no: 'Den Kjærlige, den Vennlige'
 	},
 	{
 		arabic: 'الْمَجِيدُ',
 		index: '48',
 		latin: 'Al Majiid',
-		translation_en: 'The All Glorious',
-		translation_id: 'Yang Maha Mulia'
+		translation_no: 'Den All-Ærerike'
 	},
 	{
 		arabic: 'الْبَاعِثُ',
 		index: '49',
 		latin: 'Al Baa’its',
-		translation_en: 'The Raiser of the Dead',
-		translation_id: 'Yang Maha Membangkitkan'
+		translation_no: 'De Dødes Gjenoppvekker'
 	},
 	{
 		arabic: 'الشَّهِيدُ',
 		index: '50',
 		latin: 'As Syahiid',
-		translation_en: 'The Witness',
-		translation_id: 'Yang Maha Menyaksikan'
+		translation_no: 'Vitnet'
 	},
 	{
 		arabic: 'الْحَقُّ',
 		index: '51',
 		latin: 'Al Haqq',
-		translation_en: 'The Truth, the Real',
-		translation_id: 'Yang Mahabenar'
+		translation_no: 'Sannheten, den Virkelige'
 	},
 	{
 		arabic: 'الْوَكِيلُ',
 		index: '52',
 		latin: 'Al Wakiil',
-		translation_en: 'The Trustee, the Dependable',
-		translation_id: 'Yang Maha Memelihara'
+		translation_no: 'Tillitsmannen, den Pålitelige'
 	},
 	{
 		arabic: 'الْقَوِيُّ',
 		index: '53',
 		latin: 'Al Qawiyyu',
-		translation_en: 'The Strong',
-		translation_id: 'Yang Maha Kuat'
+		translation_no: 'Den Sterke'
 	},
 	{
 		arabic: 'الْمَتِينُ',
 		index: '54',
 		latin: 'Al Matiin',
-		translation_en: 'The Firm, the Steadfast',
-		translation_id: 'Yang Maha Kokoh'
+		translation_no: 'Den Faste, den Standhaftige'
 	},
 	{
 		arabic: 'الْوَلِيُّ',
 		index: '55',
 		latin: 'Al Waliyy',
-		translation_en: 'The Protecting Friend, Patron, and Helper',
-		translation_id: 'Yang Maha Melindungi'
+		translation_no: 'Den Beskyttende Venn, Beskytter og Hjelper'
 	},
 	{
 		arabic: 'الْحَمِيدُ',
 		index: '56',
 		latin: 'Al Hamiid',
-		translation_en: 'The All Praiseworthy',
-		translation_id: 'Yang Maha Terpuji'
+		translation_no: 'Den All-Prisverdige'
 	},
 	{
 		arabic: 'الْمُحْصِي',
 		index: '57',
 		latin: 'Al Mushii',
-		translation_en: 'The Accounter, the Numberer of All',
-		translation_id: 'Yang Maha Mengalkulasi'
+		translation_no: 'Tellen, Alles Teller'
 	},
 	{
 		arabic: 'الْمُبْدِئُ',
 		index: '58',
 		latin: 'Al Mubdi’',
-		translation_en: 'The Producer, Originator, and Initiator of all',
-		translation_id: 'Yang Maha Memulai'
+		translation_no: 'Produsenten, Opphavsmannen og Initiativtakeren til alt'
 	},
 	{
 		arabic: 'الْمُعِيدُ',
 		index: '59',
 		latin: 'Al Mu’iid',
-		translation_en: 'The Reinstater Who Brings Back All',
-		translation_id: 'Yang Maha Mengembalikan Kehidupan'
+		translation_no: 'Gjeninnføreren Som Bringer Alt Tilbake'
 	},
 	{
 		arabic: 'الْمُحْيِي',
 		index: '60',
 		latin: 'Al Muhyii',
-		translation_en: 'The Giver of Life',
-		translation_id: 'Yang Maha Menghidupkan'
+		translation_no: 'Livgiveren'
 	},
 	{
 		arabic: 'اَلْمُمِيتُ',
 		index: '61',
 		latin: 'Al Mumiitu',
-		translation_en: 'The Bringer of Death, the Destroyer',
-		translation_id: 'Yang Maha Mematikan'
+		translation_no: 'Dødsbringeren, Ødeleggeren'
 	},
 	{
 		arabic: 'الْحَيُّ',
 		index: '62',
 		latin: 'Al Hayyu',
-		translation_en: 'The Ever Living',
-		translation_id: 'Yang Maha Hidup'
+		translation_no: 'Den Evig Levende'
 	},
 	{
 		arabic: 'الْقَيُّومُ',
 		index: '63',
 		latin: 'Al Qayyuum',
-		translation_en: 'The Self Subsisting Sustainer of All',
-		translation_id: 'Yang Maha Mandiri'
+		translation_no: 'Den Selvopprettholdende Opprettholderen av Alt'
 	},
 	{
 		arabic: 'الْوَاجِدُ',
 		index: '64',
 		latin: 'Al Waajid',
-		translation_en: 'The Perceiver, the Finder, the Unfailing',
-		translation_id: 'Yang Maha Penemu'
+		translation_no: 'Oppfatteren, Finneren, den Ufeilbarlige'
 	},
 	{
 		arabic: 'الْمَاجِدُ',
 		index: '65',
 		latin: 'Al Maajid',
-		translation_en: 'The Illustrious, the Magnificent',
-		translation_id: 'Yang Maha Mulia'
+		translation_no: 'Den Strålende, den Storslåtte'
 	},
 	{
 		arabic: 'الْواحِدُ',
 		index: '66',
 		latin: 'Al Wahiid',
-		translation_en: 'The One, The Unique, Manifestation of Unity',
-		translation_id: 'Yang Maha Tunggal'
+		translation_no: 'Den Ene, den Unike, Manifestasjonen av Enhet'
 	},
 	{
 		arabic: 'اَلاَحَدُ',
 		index: '67',
 		latin: 'Al ‘Ahad',
-		translation_en: 'The One, the All Inclusive, the Indivisible',
-		translation_id: 'Yang Maha Esa'
+		translation_no: 'Den Ene, den Altomfattende, den Udelelig'
 	},
 	{
 		arabic: 'الصَّمَدُ',
 		index: '68',
 		latin: 'As Shamad',
-		translation_en:
-			'The Self Sufficient, the Impregnable,the Eternally Besought of All, the Everlasting',
-		translation_id: 'Yang Maha Dibutuhkan, Tempat Meminta'
+		translation_no:
+			'Den Selvtilstrekkelige, den Uinntakelige, den Evig Bønnfalte av Alle, den Evigvarende'
 	},
 	{
 		arabic: 'الْقَادِرُ',
 		index: '69',
 		latin: 'Al Qaadir',
-		translation_en: 'The All Able',
-		translation_id: 'Yang Maha Menentukan, Maha Menyeimbangkan'
+		translation_no: 'Den All-Mektige'
 	},
 	{
 		arabic: 'الْمُقْتَدِرُ',
 		index: '70',
 		latin: 'Al Muqtadir',
-		translation_en: 'The All Determiner, the Dominant',
-		translation_id: 'Yang Maha Berkuasa'
+		translation_no: 'Den All-Bestemmer, den Dominerende'
 	},
 	{
 		arabic: 'الْمُقَدِّمُ',
 		index: '71',
 		latin: 'Al Muqaddim',
-		translation_en: 'The Expediter, He who brings forward',
-		translation_id: 'Yang Maha Mendahulukan'
+		translation_no: 'Fremskynderen, Han som bringer frem'
 	},
 	{
 		arabic: 'الْمُؤَخِّرُ',
 		index: '72',
 		latin: 'Al Mu’akkhir',
-		translation_en: 'The Delayer, He who puts far away',
-		translation_id: 'Yang Maha Mengakhirkan'
+		translation_no: 'Forsinkeren, Han som setter langt borte'
 	},
 	{
 		arabic: 'الأوَّلُ',
 		index: '73',
 		latin: 'Al Awwal',
-		translation_en: 'The First',
-		translation_id: 'Yang Maha Awal'
+		translation_no: 'Den Første'
 	},
 	{
 		arabic: 'الآخِرُ',
 		index: '74',
 		latin: 'Al Aakhir',
-		translation_en: 'The Last',
-		translation_id: 'Yang Maha Akhir'
+		translation_no: 'Den Siste'
 	},
 	{
 		arabic: 'الظَّاهِرُ',
 		index: '75',
 		latin: 'Az Zhaahir',
-		translation_en: 'The Manifest; the All Victorious',
-		translation_id: 'Yang Maha Nyata'
+		translation_no: 'Den Manifeste; den All-Seirende'
 	},
 	{
 		arabic: 'الْبَاطِنُ',
 		index: '76',
 		latin: 'Al Baathin',
-		translation_en: 'The Hidden; the All Encompassing',
-		translation_id: 'Yang Maha Ghaib'
+		translation_no: 'Den Skjulte; den Altomfattende'
 	},
 	{
 		arabic: 'الْوَالِي',
 		index: '77',
 		latin: 'Al Waali',
-		translation_en: 'The Patron',
-		translation_id: 'Yang Maha Memerintah'
+		translation_no: 'Beskytteren'
 	},
 	{
 		arabic: 'الْمُتَعَالِي',
 		index: '78',
 		latin: 'Al Muta’aalii',
-		translation_en: 'The Self Exalted',
-		translation_id: 'Yang Maha Tinggi'
+		translation_no: 'Den Selvopphøyde'
 	},
 	{
 		arabic: 'الْبَرُّ',
 		index: '79',
 		latin: 'Al Barri',
-		translation_en: 'The Most Kind and Righteous',
-		translation_id: 'Yang Maha Penderma'
+		translation_no: 'Den Mest Vennlige og Rettferdige'
 	},
 	{
 		arabic: 'التَّوَابُ',
 		index: '80',
 		latin: 'At Tawwaab',
-		translation_en: 'The Ever Returning, Ever Relenting',
-		translation_id: 'Yang Maha Penerima Tobat'
+		translation_no: 'Den Evig Tilbakevendende, den Evig Ettergivende'
 	},
 	{
 		arabic: 'الْمُنْتَقِمُ',
 		index: '81',
 		latin: 'Al Muntaqim',
-		translation_en: 'The Avenger',
-		translation_id: 'Yang Maha Penuntut Balas'
+		translation_no: 'Hevneren'
 	},
 	{
 		arabic: 'العَفُوُّ',
 		index: '82',
 		latin: 'Al Afuww',
-		translation_en: 'The Pardoner, the Effacer of Sins',
-		translation_id: 'Yang Maha Pemaaf'
+		translation_no: 'Tilgiveren, Syndenes Utsletter'
 	},
 	{
 		arabic: 'الرَّؤُوفُ',
 		index: '83',
 		latin: 'Ar Ra`uuf',
-		translation_en: 'The Compassionate, the All Pitying',
-		translation_id: 'Yang Maha Pengasih'
+		translation_no: 'Den Medfølende, den All-Medlidende'
 	},
 	{
 		arabic: 'مَالِكُ الْمُلْكِ',
 		index: '84',
 		latin: 'Malikul Mulk',
-		translation_en: 'The Owner of All Sovereignty',
-		translation_id: 'Yang Maha Penguasa Kerajaan (Semesta)'
+		translation_no: 'Eieren av All Suverenitet'
 	},
 	{
 		arabic: 'ذُوالْجَلاَلِوَالإكْرَامِ',
 		index: '85',
 		latin: 'Dzul JalaaliWal Ikraam',
-		translation_en: 'The Lord of Majesty and Generosity',
-		translation_id: 'Yang Maha Pemilik Kebesaran dan Kemuliaan'
+		translation_no: 'Herren over Majestet og Gavmildhet'
 	},
 	{
 		arabic: 'الْمُقْسِطُ',
 		index: '86',
 		latin: 'Al Muqsith',
-		translation_en: 'The Equitable, the Requiter',
-		translation_id: 'Yang Maha Adil'
+		translation_no: 'Den Rettferdige, Gjengjelderen'
 	},
 	{
 		arabic: 'الْجَامِعُ',
 		index: '87',
 		latin: 'Al Jamii’',
-		translation_en: 'The Gatherer, the Unifier',
-		translation_id: 'Yang Maha Mengumpulkan'
+		translation_no: 'Samleren, Foreneren'
 	},
 	{
 		arabic: 'الْغَنِيُّ',
 		index: '88',
 		latin: 'Al Ghaniyy',
-		translation_en: 'The All Rich, the Independent',
-		translation_id: 'Yang Maha Berkecukupan'
+		translation_no: 'Den All-Rike, den Uavhengige'
 	},
 	{
 		arabic: 'الْمُغْنِي',
 		index: '89',
 		latin: 'Al Mughnii',
-		translation_en: 'The Enricher, the Emancipator',
-		translation_id: 'Yang Maha Memberi Kekayaan'
+		translation_no: 'Berikeren, Frigjøreren'
 	},
 	{
 		arabic: 'اَلْمَانِعُ',
 		index: '90',
 		latin: 'Al Maani',
-		translation_en: 'The Withholder, the Shielder, the Defender',
-		translation_id: 'Yang Maha Mencegah'
+		translation_no: 'Tilbakeholderen, Beskytteren, Forsvareren'
 	},
 	{
 		arabic: 'الضَّارَّ',
 		index: '91',
 		latin: 'Ad Dhaar',
-		translation_en: 'The Distressor, the Harmer',
-		translation_id: 'Yang Maha Memberi Derita'
+		translation_no: 'Plageren, Skaderen'
 	},
 	{
 		arabic: 'النَّافِعُ',
 		index: '92',
 		latin: 'An Nafii’',
-		translation_en: 'The Propitious, the Benefactor',
-		translation_id: 'Yang Maha Memberi Manfaat'
+		translation_no: 'Den Gunstige, Velgjøreren'
 	},
 	{
 		arabic: 'النُّورُ',
 		index: '93',
 		latin: 'An Nuur',
-		translation_en: 'The Light',
-		translation_id: 'Yang Maha Bercahaya (Menerangi, Memberi Cahaya)'
+		translation_no: 'Lyset'
 	},
 	{
 		arabic: 'الْهَادِي',
 		index: '94',
 		latin: 'Al Haadii',
-		translation_en: 'The Guide',
-		translation_id: 'Yang Maha Pemberi Petunjuk'
+		translation_no: 'Veilederen'
 	},
 	{
 		arabic: 'الْبَدِيعُ',
 		index: '95',
 		latin: 'Al Baadii',
-		translation_en: 'Incomparable, the Originator',
-		translation_id: 'Yang Maha Pencipta'
+		translation_no: 'Uforlignelig, Opphavsmannen'
 	},
 	{
 		arabic: 'اَلْبَاقِي',
 		index: '96',
 		latin: 'Al Baaqii',
-		translation_en: 'The Ever Enduring and Immutable',
-		translation_id: 'Yang Maha Kekal'
+		translation_no: 'Den Evigvarende og Uforanderlige'
 	},
 	{
 		arabic: 'الْوَارِثُ',
 		index: '97',
 		latin: 'Al Waarits',
-		translation_en: 'The Heir, the Inheritor of All',
-		translation_id: 'Yang Maha Pewaris'
+		translation_no: 'Arvingen, Arvtakeren av Alt'
 	},
 	{
 		arabic: 'الرَّشِيدُ',
 		index: '98',
 		latin: 'Ar Rasyiid',
-		translation_en: 'The Guide, Infallible Teacher, and Knower',
-		translation_id: 'Yang Maha Pandai'
+		translation_no: 'Veilederen, den Ufeilbarlige Læreren og Vitenskapsmannen'
 	},
 	{
 		arabic: 'الصَّبُورُ',
 		index: '99',
 		latin: 'As Shabuur',
-		translation_en: 'The Patient',
-		translation_id: 'Yang Maha Sabar'
+		translation_no: 'Den Tålmodige'
 	}
 ];
 

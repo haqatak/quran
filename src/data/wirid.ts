@@ -41,13 +41,13 @@ const wiridData: WiridItem[] = [
 		times: 3,
 		arabic:
 			'لَاإِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْئٍ قَدِيْرٌ',
-		tnc: '(dibaca tiga kali tiap selesai shalat fardhu, khusus setelah maghrib dan shubuh sepuluh kali)'
+		tnc: '(leses tre ganger etter hver fard-bønn, spesielt ti ganger etter maghrib og shubuh)'
 	},
 	{
 		id: 6,
 		times: 7,
 		arabic: 'اَللَّهُمَّ أَجِرْنِـى مِنَ النَّارِ',
-		tnc: '(tujuh kali bakda maghrib dan shubuh)'
+		tnc: '(sju ganger etter maghrib og shubuh)'
 	},
 	{
 		id: 7,
@@ -73,7 +73,7 @@ const wiridData: WiridItem[] = [
 	{
 		id: 10,
 		times: 1,
-		arabic: 'Membaca Surat al-Ikhlas, Surat al-Falaq, Surat an-Nas, lalu Surat al-Fatihah',
+		arabic: 'Les Surat al-Ikhlas, Surat al-Falaq, Surat an-Nas, deretter Surat al-Fatihah',
 		tnc: ''
 	},
 	{
@@ -111,13 +111,13 @@ const wiridData: WiridItem[] = [
 		id: 16,
 		times: 100,
 		arabic: ' لَاإِلَهَ إِلَّا اللهُ ',
-		tnc: '(Dibaca 300 kali bakda shubuh, 100 kali bakda isya, 50 kali bakda dhuhur, 50 kali bakda ashar, dan 100 kali bakda maghrib)'
+		tnc: '(Leses 300 ganger etter shubuh, 100 ganger etter isha, 50 ganger etter dhuhur, 50 ganger etter ashar, og 100 ganger etter maghrib)'
 	},
 	{
 		id: 17,
 		times: 100,
 		arabic: 'صَلَّى اللهُ عَلَى مُحَمَّدٍ',
-		tnc: '(dibaca bakda shubuh 300 atau 100 kali)'
+		tnc: '(leses 300 eller 100 ganger etter shubuh)'
 	},
 	{
 		id: 18,
@@ -128,6 +128,6 @@ const wiridData: WiridItem[] = [
 ];
 
 export default {
-	source,
+	source: "Kilde: " + source,
 	data: wiridData
 };
