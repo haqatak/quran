@@ -1,19 +1,20 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	import { pinnedSurah } from '../store';
 	import CardShadow from './CardShadow.svelte';
 	import ArrowRightIcon from './icons/ArrowRightIcon.svelte';
 </script>
 
 <div class="flex gap-2 mb-2">
-	<h2 class="text-xl font-bold">📌 Surat yang disematkan</h2>
+	<h2 class="text-xl font-bold">{$_('pinned_surah.title')}</h2>
 </div>
 
 {#if $pinnedSurah.length === 0}
 	<CardShadow>
 		<div class="flex justify-between items-center">
 			<div>
-				<p>Kamu belum punya surah yang di pin!</p>
-				<p>Mulai pin 6 surah agar mudah diakses.</p>
+				<p>{$_('pinned_surah.empty_message')}</p>
+				<p>{$_('pinned_surah.start_pinning')}</p>
 			</div>
 			<a
 				href="/all-surah/"
